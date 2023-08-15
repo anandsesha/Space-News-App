@@ -1,0 +1,277 @@
+/* CSS Resets */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+
+/* Common */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(241, 222, 184);
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-1 {
+  flex: 1;
+}
+.jcc {
+  justify-content: center;
+}
+.jce {
+  justify-content: stretch;
+}
+.aic {
+  align-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/* .flex-45 {
+  flex: 0 1 45%;
+} */
+/* .flex-100 {
+  flex: 0 1 100%;
+} */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 0, 0);
+  /* min-width: 100vh; */
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+/* Header */
+.header {
+  background-color: rgb(0, 0, 0);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 2rem 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(0, 0, 0);
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 1rem 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Drop-Down box */
+select {
+  margin: 2rem 0;
+  padding: 0.4rem 0.6rem;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.1rem;
+  font-size: 1rem;
+  text-align: start;
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+}
+select option {
+  display: block;
+  white-space: nowrap;
+  min-height: 1rem;
+  line-height: 1rem;
+}
+/* NEWS */
+/* .news-set-group {
+  margin: 2rem;
+} */
+/* .group-A {
+  margin-right: 1rem;
+} */
+/* .group-A,
+.group-B {
+  padding: 1rem;
+  border: 1px solid rgb(122, 122, 122);
+} */
+.news-set {
+  margin: 1rem;
+  /* flex-grow: 1; */
+  /* max-width: inherit; */
+}
+.news-set img {
+  width: 20rem;
+  height: 20rem;
+  /* border: 1px solid rgb(0, 0, 0); */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+  object-fit: cover;
+}
+.news-description {
+  /* margin: 0.4rem 0; */
+  padding: 1rem;
+  flex-grow: 1;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.source {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  background-color: rgb(54, 126, 127);
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: start;
+  color: rgb(0, 0, 0);
+}
+.read-more {
+  padding: 1rem 1.2rem;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(239, 239, 239);
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
